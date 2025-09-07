@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Place Your Order</h2>
+    <form action="https://ms-nabil2.app.n8n.cloud/webhook/order-inventory-test" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="number">Phone Number:</label>
+      <input type="tel" id="number" name="Number" required>
+
+      <label for="product">Product:</label>
+      <select id="product" name="Product" required>
+        <option value="T-Shirt">T-Shirt</option>
+        <option value="Shoes">Shoes</option>
+      </select>
+
+      <label for="size">Size:</label>
+      <select id="size" name="Size" required>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+
+      <label for="color">Color:</label>
+      <select id="color" name="Color" required>
+        <option value="Black">Black</option>
+        <option value="White">White</option>
+      </select>
+
+      <label for="wilaya">Wilaya:</label>
+      <select id="wilaya" name="Wilaya" required>
+        <option value="Algiers">Algiers</option>
+        <option value="Blida">Blida</option>
+        <option value="Oran">Oran</option>
+        <option value="Constantine">Constantine</option>
+        <option value="Tizi Ouzou">Tizi Ouzou</option>
+      </select>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+</body>
+</html>
